@@ -12,6 +12,7 @@ import java.util.*;
         }return fact;
     }
 }*/
+/*
 class Example{
     public static int fact(int num){
         int f=1;
@@ -25,5 +26,19 @@ class Example{
             System.out.println(i+" ! : "+fact(i));
             System.out.println("s");
         }
+    }
+}
+*/
+import java.util.*;
+class Example{
+    public static void main(String args[]){
+        Scanner input=new Scanner(System.in);
+        System.out.print("Input average marks : ");
+        double avg=input.nextDouble();
+        String grade=findGrade(avg);
+        System.out.println(avg+" : "+grade);
+    }
+    public static String findGrade(double avg){
+        return avg>75?"A":avg>65?"B":avg>55?"C":avg>45?"D":"E";
     }
 }
